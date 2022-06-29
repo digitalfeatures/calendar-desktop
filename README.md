@@ -17,28 +17,12 @@
 
 ## How to build or run the election
 
+Under the root diretory of the project, following the steps:
 
-Fisrt, you need to run the npm script command, like:
+1. Install dependencies, run `npm install`
 
-```bash
-npm install
-```
-
-After this command is run, it will automatically trigger the command exection of `npm run preinstall`.
-
-The command that  `npm run preinstall` used the makefile command that `make init` to build the html content.
-
-Then, after it is installed, we only use the command that `npm run build` to see the application, like:
-
-```bash
-npm run build
-```
+2. Run the application, execute `npm run build`
 
 ## How to package the application
 
-
-package the application, you only use the command:
-
-```bash
-npm run package
-```
+Under the root diretory of the project, execute `npm run package`
