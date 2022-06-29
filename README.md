@@ -15,8 +15,7 @@
 
 - [VS Code](https://code.visualstudio.com/)
 
-## How to build or run the election
-
+## How to build or run the electron
 
 Fisrt, you need to run the npm script command, like:
 
@@ -28,14 +27,13 @@ After this command is run, it will automatically trigger the command exection of
 
 The command that  `npm run preinstall` used the makefile command that `make init` to build the html content.
 
-Then, after it is installed, we only use the command that `npm run build` to see the application, like:
+Then, after it is installed, we only use the command that `npm run start` to see the application, like:
 
 ```bash
-npm run build
+npm run start
 ```
 
 ## How to package the application
-
 
 package the application, you only use the command:
 
