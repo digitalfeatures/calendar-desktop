@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* tailwindcss snippets */
+      .font-bold {
+        font-weight: 700;
+      }
+
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+
+      .text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+
+      .text-slate-300 {
+        color: rgb(203 213 225);
+      }
+
+      .text-slate-400 {
+        color: rgb(148 163 184);
+      }
+
+      .m-2 {
+        margin: 0.5rem;
+      }
+
+      .m-4 {
+        margin: 1rem;
+      }
+    </style>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+
+        background: rgba(255, 255, 255);
+
+        opacity: 1;
+
+        animation: 3s ease-out 0s 1 normal logo-fade-out;
+      }
+
+      .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .connect {
+        display: inline-block;
+      }
+
+      @keyframes logo-fade-out {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <span class="text-3xl font-bold text-slate-400">Calendar</span>
+        <span class="connect text-sm font-bold text-slate-300 m-4">X</span>
+        <span class="text-3xl font-bold text-slate-300">LinkSystem</span>
+      </div>
+    </div>
+
+    <script>
+      Loading.onEndLoadingEvent(() => {
+        setTimeout(() => {
+          Loading.closeLoading();
+        }, 3 * 1000);
+      });
+    </script>
+  </body>
+</html>
